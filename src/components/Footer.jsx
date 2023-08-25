@@ -49,7 +49,7 @@ const Footer = () => {
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}>
             <Image w='50px' h='50px'  src={logo} alt="logo delivroo" />
-            <Text>© 2023 Delivroo App. Todos Direitos Reservados.</Text>
+            <Text>© 2023 Delivroo App</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
                 <FaTwitter />
