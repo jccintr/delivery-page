@@ -5,7 +5,7 @@ import logo from '../assets/logo-delivroo.png';
 
 const Header = () => {
   return (
-    <Box as='section' color='gray.50' bg='blue.500' pt='10px' pb='150px' px='10px' textAlign={{ base: 'center', lg: 'center' }}>
+    <Box as='header' color='gray.50' bg='blue.500' pt='10px' pb='150px' px='10px' textAlign={{ base: 'center', lg: 'center' }}>
         <Flex direction={{ base: 'column', lg: 'row' }} align='center' justify='space-evenly'>
             <Image w='120px' h='120px'  src={logo} alt="logo delivroo" />
             <Box pt='10px' pb='10px'>

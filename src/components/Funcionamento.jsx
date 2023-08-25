@@ -4,7 +4,7 @@ import { Box, SimpleGrid, Text,Flex,Heading } from '@chakra-ui/react'
 
 const Feature = ({ number,text}) => {
     return (
-      <Flex direction='column' align='center' justify='center'>
+      <Flex as='section' direction='column' align='center' justify='center'>
          <Flex   rounded='full' w='50px' h='50px'  align='center' justify='center' mb='20px' bg='blue.500'>
              <Heading fontWeight='extrabold' fontSize={['xl','xl','2xl']} color='white'>{number}</Heading>
          </Flex>
@@ -18,7 +18,7 @@ const Feature = ({ number,text}) => {
 const Funcionamento = () => {
     return (
         <Box align='center' bg='#F0EAFB' p={5} >
-            <Heading  fontWeight='extrabold' fontSize={['2xl','2xl','3xl']} color='blue.500' mb='50px'>Como Funcionao o Delivroo</Heading>
+            <Heading  fontWeight='extrabold' fontSize={['2xl','2xl','3xl']} color='blue.500' mb='50px'>Como Funciona o Delivroo</Heading>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Feature
               number='1'
