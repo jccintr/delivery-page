@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Text,Image,Flex,Center } from '@chakra-ui/react'
+import { Box,  Text,Image,Flex } from '@chakra-ui/react'
 import pc from '../assets/versao-pc.png';
 import mobile from '../assets/versao-mobile.png';
 
