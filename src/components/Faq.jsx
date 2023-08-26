@@ -54,7 +54,7 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Não. Nós não cobramos comissão por pedidos ou taxas de entrega. Você só paga a taxa mensal de utilização do Delivroo.
+                Não. Nós não cobramos comissão ou taxas por pedidos. Você só paga a taxa mensal do seu plano para utilizar o Delivroo.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -73,6 +73,20 @@ const Faq = () => {
             </AccordionPanel>
           </AccordionItem>
           
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                Como o meu cliente pode fazer um pedido em minha loja?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                Seu cliente pode utilizar o navegador do celular,computador ou o aplicativo Android exclusivo da sua loja para realizar pedidos em seu estabelecimento comercial.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
         </Accordion>
         </VStack>
 
