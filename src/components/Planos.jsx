@@ -33,13 +33,11 @@ import {
 
 const Planos = () => {
     return (
-        <Box py={12}>
+        <Box py={6}>
           <VStack spacing={2} textAlign="center">
-            <Heading as="h1" fontSize={['2xl','2xl','3xl']}>
-              Nossos Planos
-            </Heading>
+            <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Nossos Planos</Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
-              Teste por 7 dias de gratuitamente. Não solicitamos cartão de crédito. Cancele a qualquer momento.
+              Teste por 7 dias gratuitamente. Não solicitamos cartão de crédito. Cancele a qualquer momento.
             </Text>
           </VStack>
           <Stack direction={{ base: 'column', md: 'row' }}  textAlign="center" justify="center" spacing={{ base: 4, lg: 10 }} py={10}> 
@@ -70,27 +68,27 @@ const Planos = () => {
                 <List spacing={3} textAlign="start" px={6}>
                   <ListItem>
                     <ListIcon as={FaCheckCircle} color="blue.500" />
-                    Loja versão web.
+                    Loja personalizada na web.
                   </ListItem>
-                  <ListItem>
-                    <ListIcon as={FaCheckCircle} color="blue.500" />
-                    Pedidos ilimitados.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={FaCheckCircle} color="blue.500" />
-                    Cardápio ilimitado.
-                   </ListItem>
                   <ListItem>
                     <ListIcon as={FaCheckCircle} color="blue.500" />
                     Aplicativo Gestor Android.
                    </ListItem>
                    <ListItem>
                     <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Cardápio ilimitado.
+                   </ListItem>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Pedidos ilimitados.
+                  </ListItem>
+                   <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
                     Impressão de Pedidos.
                    </ListItem>
                   <ListItem>
                     <ListIcon as={FaCheckCircle} color="blue.500" />
-                    Sem comissão por pedidos.
+                    Sem taxas ou comissões.
                    </ListItem>
                 </List>
                 

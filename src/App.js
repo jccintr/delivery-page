@@ -5,6 +5,7 @@ import AppGestor from './components/AppGestor';
 import Funcionamento from './components/Funcionamento';
 import Planos from './components/Planos';
 import Footer from './components/Footer';
+import Faq from './components/Faq';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
        <AppGestor/>
        <Funcionamento/>
        <Planos/>
+       <Faq/>
        <Footer />
     </div>
   );
