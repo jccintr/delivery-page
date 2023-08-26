@@ -21,7 +21,7 @@ import {
         shadow="base"
         borderWidth="1px"
         w={{ base: '340px', lg: '420px' }}
-        h='520px'
+        h={{ base: '', lg: '520px' }}
         alignSelf={{ base: 'center', lg: 'flex-start' }}
         borderColor={useColorModeValue('gray.200', 'gray.500')}
         borderRadius={'xl'}>
@@ -39,12 +39,12 @@ const Planos = () => {
               Nossos Planos
             </Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
-              Teste por 7 dias de graça. Não solicitamos cartão de crédito. Cancele a qualquer momento.
+              Teste por 7 dias de gratuitamente. Não solicitamos cartão de crédito. Cancele a qualquer momento.
             </Text>
           </VStack>
           <Stack direction={{ base: 'column', md: 'row' }}  textAlign="center" justify="center" spacing={{ base: 4, lg: 10 }} py={10}> 
             <PriceWrapper>
-              <Box py={4} px={6}>
+              <Box bg={useColorModeValue('gray.50', 'gray.700')} py={4} px={6}>
                 <Text fontWeight="500" fontSize="2xl">
                   Básico
                 </Text>
@@ -60,7 +60,7 @@ const Planos = () => {
                   </Text>
                 </HStack>
               </Box>
-              <VStack  bg={useColorModeValue('gray.50', 'gray.700')} py={4} borderBottomRadius={'xl'}>
+              <VStack   py={4} borderBottomRadius={'xl'}>
               <Box w="80%" pb={7}>
                   <Button w="full"  colorScheme='blue' >
                     Quero este plano !
@@ -100,7 +100,7 @@ const Planos = () => {
             </PriceWrapper>
 
             <PriceWrapper>
-              <Box py={4} px={6}>
+              <Box bg={useColorModeValue('gray.50', 'gray.700')} py={4} px={6}>
                 <Text fontWeight="500" fontSize="2xl">
                   Plus
                 </Text>
@@ -116,7 +116,7 @@ const Planos = () => {
                   </Text>
                 </HStack>
               </Box>
-              <VStack  bg={useColorModeValue('gray.50', 'gray.700')} py={4} borderBottomRadius={'xl'}>
+              <VStack   py={4} borderBottomRadius={'xl'}>
               <Box w="80%" pb={7}>
                   <Button w="full"  colorScheme='blue' >
                     Quero este plano !
