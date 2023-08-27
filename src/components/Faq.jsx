@@ -20,7 +20,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Preciso de um computador para utilizar o Delivroo?
+                Preciso de um computador para utilizar o Delivroo em minha loja?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
