@@ -40,7 +40,7 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Não se preocupe, nós criamos o seu cardápio gratuitamente.
+                Você pode criar e gerenciar o seu cardápio com o Aplicativo Gestor do Delivroo. Mas não se preocupe, nós lhe ajudamos a criar o seu cardápio inicial sem qualquer custo adicional.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -82,7 +82,21 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Seu cliente pode utilizar o navegador do celular,computador ou o aplicativo Android exclusivo da sua loja para realizar pedidos em seu estabelecimento comercial.
+                Seu cliente pode utilizar o navegador do celular,computador ou o aplicativo Android exclusivo da sua loja para realizar pedidos em sua loja online.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                O meu cliente precisa se cadastrar no Delivroo para fazer pedidos?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                Não. Seu cliente precisa apenas informar o nome e o telefone para realizar um pedido no Delivroo.
               </Text>
             </AccordionPanel>
           </AccordionItem>
