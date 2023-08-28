@@ -17,7 +17,7 @@ const Feature = ({ number,text}) => {
 
 const Funcionamento = () => {
     return (
-        <Box align='center' bg='#F0EAFB' p={5} >
+        <Box  align='center' bg='#F0EAFB' p={5} py={6}>
             <Heading  fontWeight='extrabold' fontSize={['2xl','2xl','3xl']}  mb='50px'>Como funciona o Delivroo</Heading>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Feature

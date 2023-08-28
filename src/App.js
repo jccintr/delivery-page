@@ -7,6 +7,7 @@ import Planos from './components/Planos';
 import Footer from './components/Footer';
 import Faq from './components/Faq';
 import Recursos from './components/Recursos';
+import Modelos from './components/Modelos';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
        
        <Faq/>
        <Planos/>
+       <Modelos/>
        <Footer />
     </div>
   );
