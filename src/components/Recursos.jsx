@@ -13,11 +13,11 @@ const Card = ({ heading, description, icon, href }) => {
   return (
     <Box maxW={{ base: 'full', md: '275px' }} w={'full'} align='center'  borderWidth="1px" borderRadius="lg" overflow="hidden" p={5}>
       <Stack align={'center'} spacing={2}>
-        <Flex  w={16} h={16} align={'center'} justify={'center'} color={'gray.500'} rounded={'full'} bg={useColorModeValue('gray.100', 'gray.700')}>
+        <Flex  w={16} h={16} align={'center'} justify={'center'} color={'blue.500'} rounded={'full'} bg={useColorModeValue('gray.100', 'gray.700')}>
           {icon}
         </Flex>
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
+          <Heading fontSize={['lg','lg','lg']} >{heading}</Heading>
           <Text mt={1} fontSize={'sm'}>
             {description}
           </Text>
@@ -35,16 +35,27 @@ const Recursos = () => {
     <Box p={4}>
 
       <VStack spacing={2} textAlign="center">
-          <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Conheça os recursos do Delivroo</Heading>
+          <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Recursos do Delivroo</Heading>
           <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati ut
-          cupiditate pariatur, dignissimos, placeat amet officiis.
+          O Delivroo tem todos os recursos para você automatizar o seu delivery e melhor atender a seu cliente.
           </Text>
       </VStack>
       
 
       <Container maxW={'5xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
+        <Card
+            heading={'QR Code do Cardápio'}
+            icon={<Icon as={BsQrCode} w={10} h={10} />}
+            description={'Facilite o acesso ao cardápio na sua loja física.'}
+            href={'#'}
+          />
+          <Card
+            heading={'Mensagens no WhatsApp'}
+            icon={<Icon as={FaWhatsapp} w={10} h={10} />}
+            description={'Notifique o seus clientes pelo WhatsApp de forma simples e rápida.'}
+            href={'#'}
+          />
           <Card
             heading={'Impressão de Pedidos'}
             icon={<Icon as={FiPrinter} w={10} h={10} />}
@@ -52,35 +63,33 @@ const Recursos = () => {
             href={'#'}
           />
           <Card
-            heading={'QR Code do Cardápio'}
-            icon={<Icon as={BsQrCode} w={10} h={10} />}
-            description={'Facilite o acesso ao cardápio na sua loja física.'}
+            heading={'Status do Pedido'}
+            icon={<Icon as={BsExclamationCircle} w={10} h={10} />}
+            description={'Seu cliente acompanha o status do pedido em tempo real.'}
             href={'#'}
           />
-           <Card
-            heading={'Mensagens no WhatsApp'}
-            icon={<Icon as={FaWhatsapp} w={10} h={10} />}
-            description={'Notifique o seus clientes pelo WhatsApp de forma simples e rápida.'}
-            href={'#'}
-          />
-           <Card
+         <Card
             heading={'Cardápio'}
             icon={<Icon as={IoFastFoodOutline} w={10} h={10} />}
             description={'Crie ou modifique o seu cardápio rapidamente.'}
             href={'#'}
           />
+           <Card
+            heading={'Remova Produtos'}
+            icon={<Icon as={BiHide} w={10} h={10} />}
+            description={'Gerencie a disponibilidade dos produtos em seu cardápio.'}
+            href={'#'}
+          />
           <Card
             heading={'Adicionais nos Produtos'}
             icon={<Icon as={FaListCheck} w={10} h={10} />}
-            description={'Permite ao seus clientes inluir itens adicionais aos produtos.'}
+            description={'Permite ao seus clientes incluir itens adicionais aos produtos.'}
             href={'#'}
           />
-          <Card
-            heading={'Status do Pedido'}
-            icon={<Icon as={BsExclamationCircle} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'#'}
-          />
+         
+           
+           
+          
           <Card
             heading={'Taxas de Entrega'}
             icon={<Icon as={BsMap} w={10} h={10} />}
@@ -90,15 +99,15 @@ const Recursos = () => {
            <Card
             heading={'Visual'}
             icon={<Icon as={IoColorPaletteOutline} w={10} h={10} />}
-            description={'Altere a aparência da sua loja virtual a qualquer momento.'}
+            description={'Personalise o visual de sua loja virtual a qualquer momento.'}
             href={'#'}
           />
-          <Card
-            heading={'Remova Produtos'}
-            icon={<Icon as={BiHide} w={10} h={10} />}
-            description={'Gerencie a disponibilidade dos produtos em seu cardápio.'}
+         {/* <Card
+            heading={'Abre e Fecha'}
+            icon={<Icon as={IoColorPaletteOutline} w={10} h={10} />}
+            description={'Personalise o visual de sua loja virtual a qualquer momento.'}
             href={'#'}
-          />
+  />*/}
         </Flex>
       </Container>
 
