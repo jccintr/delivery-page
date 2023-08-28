@@ -101,6 +101,20 @@ const Faq = () => {
             </AccordionPanel>
           </AccordionItem>
 
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                O Delivroo serve apenas para delivery de comida?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                Não. O Delivroo está preparado para atender a qualquer tipo de comércio.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
         </Accordion>
         </VStack>
 
