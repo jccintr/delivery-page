@@ -6,6 +6,7 @@ import Funcionamento from './components/Funcionamento';
 import Planos from './components/Planos';
 import Footer from './components/Footer';
 import Faq from './components/Faq';
+import Recursos from './components/Recursos';
 
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
        <NoTax/>
        <AppGestor/>
        <Funcionamento/>
-       <Planos/>
+       <Recursos/>
+       
        <Faq/>
+       <Planos/>
        <Footer />
     </div>
   );
