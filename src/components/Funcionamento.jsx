@@ -16,7 +16,7 @@ const Feature = ({ number,text}) => {
 
   const Card = ({ number, text }) => {
     return (
-      <Box maxW={{ base: 'full', md: '275px' }} w={'full'} align='center'  borderWidth="1px" borderColor='gray.400' borderRadius="lg" overflow="hidden" p={5} _hover={{ borderColor: 'blue.500' }}>
+      <Box maxW={{ base: 'full', md: '275px' }} w={'full'} align='center'   borderRadius="lg" overflow="hidden" p={5} >
         <Stack align={'center'} spacing={2}>
            <Flex   rounded='full' w='50px' h='50px'  align='center' justify='center' mb='20px' bg='blue.500'>
              <Heading fontWeight='extrabold' fontSize={['xl','xl','2xl']} color='white'>{number}</Heading>

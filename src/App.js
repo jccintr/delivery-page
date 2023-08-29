@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Faq from './components/Faq';
 import Recursos from './components/Recursos';
 import Modelos from './components/Modelos';
+import Form from './components/Form';
 
 
 function App() {
@@ -19,10 +20,10 @@ function App() {
        <AppGestor/>
        <Funcionamento/>
        <Recursos/>
-       
        <Faq/>
        <Planos/>
        <Modelos/>
+       <Form/>
        <Footer />
     </div>
   );

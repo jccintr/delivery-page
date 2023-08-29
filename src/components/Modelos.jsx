@@ -2,15 +2,12 @@ import React from 'react'
 import {
     Box,
     Stack,
-    HStack,
+   
     Heading,
     Text,
     VStack,
     useColorModeValue,
-    List,
-    ListItem,
-    ListIcon,
-    Button,Image,
+    Button,Image,Link
   } from '@chakra-ui/react'
   import modelo1 from '../assets/modelo1.png';
   import modelo2 from '../assets/modelo2.png';
@@ -38,16 +35,22 @@ const Modelos = () => {
         </VStack>
         <Stack direction={{ base: 'column', md: 'row' }}  textAlign="center" justify="center" spacing={{ base: 4, lg: 10 }} py={10}>
            <ModeloWrapper>
-           <Image w='272px' h='500px'  src={modelo1} alt="versão pc" rounded='md' border={'1px'}/>
-           <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
+              <Image w='272px' h='500px'  src={modelo1} alt="versão pc" rounded='md' border={'1px'}/>
+              <Link href='https://delivroo.netlify.app/nocapricholanches' isExternal>
+                    <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
+              </Link>
            </ModeloWrapper>
            <ModeloWrapper>
                <Image w='272px' h='500px'  src={modelo2} alt="versão pc" rounded='md' border={'1px'}/>
-               <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
+               <Link href='https://delivroo.netlify.app/lucigas' isExternal>
+                    <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
+              </Link>
            </ModeloWrapper>
            <ModeloWrapper>
-           <Image w='272px' h='500px'  src={modelo3} alt="versão pc" rounded='md' border={'1px'}/>
-           <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
+              <Image w='272px' h='500px'  src={modelo3} alt="versão pc" rounded='md' border={'1px'}/>
+              <Link href='https://delivroo.netlify.app/casadopastel' isExternal>
+                    <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
+              </Link>
            </ModeloWrapper>
         </Stack>
     </Box>

@@ -117,7 +117,7 @@ const Planos = () => {
               <VStack   py={4} borderBottomRadius={'xl'}>
               <Box w="80%" pb={7}>
                   <Button w="full"  colorScheme='blue' >
-                    Quero este plano !
+                    Em Breve !
                   </Button>
                 </Box>
                 <Text fontWeight="900" mb='20px'>Detalhes do Plano Plus</Text>
