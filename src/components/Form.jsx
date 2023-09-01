@@ -1,29 +1,49 @@
-import React from 'react'
-import {
-    Box,
-    Button,
-   
-    FormControl,
-    FormLabel,
-    Heading,
-   
-    Input,
-    InputGroup,
-    InputLeftElement,
-    Text,
-  
-    Textarea,
-    
-   
-    useColorModeValue,
-    VStack,
-  } from '@chakra-ui/react'
+import React, {useState} from 'react';
+import {Box,Button,FormControl,FormLabel,Heading,Input,InputGroup,InputLeftElement,Text,Textarea,useColorModeValue,VStack,useToast,} from '@chakra-ui/react';
+import { BsPerson,  } from 'react-icons/bs';
+import { MdOutlineEmail } from 'react-icons/md';
+import {FaWhatsapp} from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
-  import { BsPerson,  } from 'react-icons/bs' 
-  import { MdOutlineEmail } from 'react-icons/md' 
-  import {FaWhatsapp} from 'react-icons/fa'
 
 const Form = () => {
+    const [nome,setNome] = useState('');
+    const [telefone,setTelefone] = useState('');
+    const [email,setEmail] = useState('');
+    const [tipo,setTipo] = useState('');
+    const [mensagem,setMensagem] = useState('');
+    const toast = useToast();
+    const [isLoading,setIsLoading] = useState(false);
+
+  const onEnviar = async () => {
+      //e.preventDefault();
+    
+   setIsLoading(true);
+   const templateParams = {
+      from_name: nome,
+      from_email: email,
+      from_phone: telefone,
+      from_tipo : tipo,
+      message: mensagem
+   }
+
+   
+   emailjs.send('service_kr87iur', 'template_tmo311e', templateParams,'9Fk204d4daU3I1Y6n') // delivroo
+  .then(function(response) {
+     console.log('SUCCESS!', response.status, response.text);
+     setNome('');
+     setEmail('');
+     setTelefone('');
+     setTipo('');
+     setMensagem('');
+     toast({title: 'Mensagem Enviada !', description: "O Delivroo agradece o seu contato. Em breve entraremos em contato.",status: 'success', duration: 3000, isClosable: true,});
+     setIsLoading(false);
+  }, function(error) {
+     console.log('FAILED...', error);
+     setIsLoading(false);
+  });
+    
+  }
   
     return (
         <Box py={6} >
@@ -36,13 +56,14 @@ const Form = () => {
           <VStack spacing={2} textAlign="center">
           <Box shadow="base" borderWidth="1px" borderColor={useColorModeValue('gray.200', 'gray.500')} borderRadius={'xl'}  mt='20px' w={{base:'340px', lg:'600px'}}  mx={10} p={{ base: 5, lg: 8 }}>
           <VStack spacing={5}>
+          
                   <FormControl isRequired>
                     <FormLabel>Nome</FormLabel>
                     <InputGroup>
                       <InputLeftElement>
                         <BsPerson />
                       </InputLeftElement>
-                      <Input type="text" name="nome" placeholder="Seu nome" />
+                      <Input type="text" name="nome" placeholder="Seu nome" value={nome} onChange={e => setNome(e.target.value)} />
                     </InputGroup>
                   </FormControl>
 
@@ -52,7 +73,7 @@ const Form = () => {
                       <InputLeftElement>
                         <FaWhatsapp />
                       </InputLeftElement>
-                      <Input type="text" name="telefone" placeholder="Seu telefone" />
+                      <Input type="text" name="telefone" placeholder="Seu telefone" value={telefone} onChange={e => setTelefone(e.target.value)} />
                     </InputGroup>
                   </FormControl>
 
@@ -62,29 +83,30 @@ const Form = () => {
                       <InputLeftElement>
                         <MdOutlineEmail />
                       </InputLeftElement>
-                      <Input type="text" name="email" placeholder="Seu email" />
+                      <Input type="text" name="email" placeholder="Seu email" value={email} onChange={e => setEmail(e.target.value)} />
                     </InputGroup>
                   </FormControl>
 
                   <FormControl isRequired>
                     <FormLabel>Tipo de Negócio</FormLabel>
                     <InputGroup>
-                      
-                      <Input type="text" name="tipo" placeholder="Pizzaria, hamburgueria, lanchonete" />
+                      <Input type="text" name="tipo" placeholder="Pizzaria, hamburgueria, lanchonete" value={tipo} onChange={e => setTipo(e.target.value)}/>
                     </InputGroup>
                   </FormControl>
 
                   <FormControl>
                     <FormLabel>Mensagem (opcional)</FormLabel>
-
                     <Textarea
                       name="mensagem"
                       placeholder="Sua mensagem"
                       rows={6}
                       resize="none"
+                      value={mensagem} onChange={e => setMensagem(e.target.value)}
                     />
                   </FormControl>
-                  <Button w="full" mt='20px' colorScheme='blue' >Enviar</Button>
+
+                  <Button onClick={onEnviar} w="full" mt='20px' colorScheme='blue' isLoading={isLoading}>ENVIAR</Button>
+            
           </VStack>
           </Box>
           </VStack>

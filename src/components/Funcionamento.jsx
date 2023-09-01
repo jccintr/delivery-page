@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, SimpleGrid, Text,Flex,Heading,Stack } from '@chakra-ui/react'
+import { Box, Text,Flex,Heading,Stack } from '@chakra-ui/react'
 
-
+/*
 const Feature = ({ number,text}) => {
     return (
       <Flex as='section' direction='column' align='center' justify='center'>
@@ -13,7 +13,7 @@ const Feature = ({ number,text}) => {
       </Flex>
     )
   }
-
+*/
   const Card = ({ number, text }) => {
     return (
       <Box maxW={{ base: 'full', md: '275px' }} w={'full'} align='center'   borderRadius="lg" overflow="hidden" p={5} >
