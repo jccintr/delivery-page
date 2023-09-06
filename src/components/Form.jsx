@@ -1,10 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import {Box,Button,FormControl,FormLabel,Heading,Input,InputGroup,InputLeftElement,Text,Textarea,useColorModeValue,VStack,useToast,} from '@chakra-ui/react';
 import { BsPerson,  } from 'react-icons/bs';
 import { MdOutlineEmail } from 'react-icons/md';
 import {FaWhatsapp} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
+
+const insertPhoneMask = (phone) => {
+
+  const noMask = phone.replace(/\D/g, '');
+  const { length } = noMask;
+  if (length <= 11) {
+    return noMask
+      .replace(/(\d{2})(\d)/, '($1) $2')
+      .replace(length === 11 ? /(\d{5})(\d)/ : /(\d{4})(\d)/, '$1-$2');
+  }
+  return phone;
+
+}
 
 const Form = () => {
     const [nome,setNome] = useState('');
@@ -15,10 +28,27 @@ const Form = () => {
     const toast = useToast();
     const [isLoading,setIsLoading] = useState(false);
 
+    useEffect(() => {
+         setTelefone(insertPhoneMask(telefone));
+      }, [telefone]);
+
   const onEnviar = async () => {
-      //e.preventDefault();
     
+   if (nome.trim().length===0 || email.trim().length===0 || telefone.trim().length===0 || tipo.trim().length===0 ){
+      
+    toast({
+      title: 'Atenção !',
+      description: "Por favor, informe o seu nome, email, telefone e tipo de negócio.",
+      status: 'error',
+      duration: 3000,
+      isClosable: true,
+    })
+       
+       return
+   }
+
    setIsLoading(true);
+
    const templateParams = {
       from_name: nome,
       from_email: email,
@@ -36,7 +66,7 @@ const Form = () => {
      setTelefone('');
      setTipo('');
      setMensagem('');
-     toast({title: 'Mensagem Enviada !', description: "O Delivroo agradece o seu contato. Em breve entraremos em contato.",status: 'success', duration: 3000, isClosable: true,});
+     toast({title: 'Mensagem Enviada !', description: "Recebemos a sua mensagem. Em breve entraremos em contato.",status: 'success', duration: 3000, isClosable: true,});
      setIsLoading(false);
   }, function(error) {
      console.log('FAILED...', error);
