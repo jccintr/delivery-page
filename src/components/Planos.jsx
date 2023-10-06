@@ -51,7 +51,7 @@ const Planos = () => {
                     R$
                   </Text>
                   <Text fontSize="5xl" fontWeight="900">
-                    39,90
+                    59,90
                   </Text>
                   <Text fontSize="3xl" color="gray.500">
                     /mês
@@ -107,7 +107,7 @@ const Planos = () => {
                     R$
                   </Text>
                   <Text fontSize="5xl" fontWeight="900">
-                    59,90
+                    89,90
                   </Text>
                   <Text fontSize="3xl" color="gray.500">
                     /mês
