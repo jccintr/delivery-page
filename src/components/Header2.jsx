@@ -8,7 +8,7 @@ const links = [{id:1,title: 'Recursos'},{id:1,title: 'Dúvidas'},{id:1,title: 'P
 const NavLink = ({children}) => {
   
   return (
-    <Box display='flex' alignItems={'center'} justifyContent={'center'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={'#'}>
+    <Box display='flex' alignItems={'center'} justifyContent={'center'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={'#contato'}>
        <Text color={'#ffffff'} as='b' >{children}</Text>
     </Box>
   )
@@ -17,7 +17,7 @@ const NavLink = ({children}) => {
 const NavLink2 = ({children}) => {
   
   return (
-    <Box display='flex' alignItems={'center'} justifyContent={'flex-start'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={'#'}>
+    <Box display='flex' alignItems={'center'} justifyContent={'flex-start'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={'#contato'}>
        <Text color={'#ffffff'} as='b' >{children}</Text>
     </Box>
   )
@@ -45,7 +45,7 @@ const Header2 = () => {
           <IconButton
             bg={'blue.600'}
             size={'md'}
-            icon={isOpen ? <CloseIcon color='#ffffff'/> : <HamburgerIcon color='#ffffff'/>}
+            icon={isOpen ? <CloseIcon w={4} h={4} color='#ffffff'/> : <HamburgerIcon w={6} h={6} color='#ffffff'/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}

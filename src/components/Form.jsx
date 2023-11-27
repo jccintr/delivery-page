@@ -76,7 +76,7 @@ const Form = () => {
   }
   
     return (
-        <Box py={6} >
+        <Box id="contato" py={6} >
           <VStack spacing={2} textAlign="center">
             <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Quero ser Delivroo !</Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
