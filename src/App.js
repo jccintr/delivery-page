@@ -9,14 +9,14 @@ import Faq from './components/Faq';
 import Recursos from './components/Recursos';
 import Modelos from './components/Modelos';
 import Form from './components/Form';
+import Header2 from './components/Header2';
 
 
 function App() {
   return (
     <div className="App">
-       <Header/>
-       <Versoes/>
-       <NoTax/>
+       <Header2/>
+       
        <AppGestor/>
        <Funcionamento/>
        <Recursos/>

@@ -20,7 +20,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Preciso de um computador para utilizar o Delivroo em minha loja?
+                Preciso de um computador para utilizar o Delivroo em minha loja ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -34,7 +34,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Como faço para criar o meu cardápio?
+                Como faço para criar o meu cardápio ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -48,7 +48,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Recebo muitos pedidos diariamente. Terei que pagar algo a mais por isto?
+                Recebo muitos pedidos diariamente. Terei que pagar algo a mais por isto ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -62,7 +62,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Vocês também fornecem o serviço de entrega com Motoboys?
+                Vocês também fornecem o serviço de entrega com Motoboys ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -76,7 +76,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Como o meu cliente pode fazer um pedido em minha loja?
+                Como o meu cliente pode fazer um pedido em minha loja ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -90,7 +90,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                O meu cliente precisa se cadastrar no Delivroo para fazer pedidos?
+                O meu cliente precisa se cadastrar no Delivroo para fazer pedidos ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -104,13 +104,55 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                O Delivroo serve apenas para delivery de comida?
+                O Delivroo serve apenas para delivery de comida ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
                 Não. O Delivroo está preparado para atender a qualquer tipo de comércio.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                Preciso ter um site para usar o Delivroo ?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                colocar a resposta aqui.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                Como é feito o pagamento dos pedidos ?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                colocar a resposta aqui
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                Como seu que chegou um novo pedido ?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                colocar a resposta aqui.
               </Text>
             </AccordionPanel>
           </AccordionItem>
