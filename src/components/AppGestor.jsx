@@ -18,7 +18,7 @@ const AppGestor = () => {
     return (
         <Box py={6}  bg='white' px='20px'  textAlign={{ base: 'center', lg: 'center' }}>
           
-          <Heading as="h1" fontSize={['2xl','2xl','3xl']} >Exclusivo Aplicativo Gestor</Heading>
+          <Heading as="h1" fontSize={['2xl','2xl','3xl']} >Aplicativo Gestor</Heading>
           <Text fontWeight='medium' fontSize={['lg','lg','xl']} pt='4' color={'gray.500'}>Gerencie o seu delivery com o nosso aplicativo gestor para Android.</Text> 
           <Flex w='100%'  direction={{ base: 'column', lg: 'row' }} align='center' justify={{ base: 'center', lg: 'center' }}>
              <Box p='60px' fontSize='18px' >

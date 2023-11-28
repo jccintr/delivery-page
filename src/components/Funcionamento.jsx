@@ -40,16 +40,16 @@ const Funcionamento = () => {
           
             <Card
               number='1'
-              text={'O cliente acessa o link da loja pelo navegador ou usa o aplicativo.'}
+              text={'Seu cliente acessa sua loja pelo link.'}
             />
             <Card
               number='2'
-              text={'O cliente acessa o cardápio, escolhe os seus produtos e envia o pedido.'
+              text={'Seu cardápio é exibido, o cliente escolhe os produtos e envia o pedido.'
               }
             />
             <Card
               number='3'
-              text={'O Aplicativo Gestor recebe o pedido e notifica a loja da chegada de um novo pedido.'
+              text={'O Aplicativo Gestor recebe o pedido e notifica sua loja da chegada de um novo pedido.'
               }
             />
           </Flex>

@@ -10,21 +10,25 @@ import Recursos from './components/Recursos';
 import Modelos from './components/Modelos';
 import Form from './components/Form';
 import Header2 from './components/Header2';
+import Topo from './components/Topo';
 
 
 function App() {
   return (
     <div className="App">
        <Header2/>
+       <Topo/>
+       <Recursos/>
        <Funcionamento/>
        <AppGestor/>
        
-       <Recursos/>
+       
        
       
        <Modelos/>
-       <Faq/>
        <Planos/>
+       <Faq/>
+       
        <Form/>
        <Footer />
     </div>

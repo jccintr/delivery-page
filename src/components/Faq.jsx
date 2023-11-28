@@ -16,8 +16,22 @@ const Faq = () => {
         <VStack spacing={2} textAlign="center">
         <Heading as="h1" mb='50px' fontSize={['2xl','2xl','3xl']}>Dúvidas Frequentes</Heading>
         <Accordion    maxW={{ base: '350px', lg: '900px' }} bg="white" rounded="lg">
+        
+        <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                Preciso ter um site para usar o Delivroo ?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                Não. Nós lhe forneceremos um link exclusivo para a sua loja online.
+              </Text>
+            </AccordionPanel>
+        </AccordionItem>
 
-          <AccordionItem>
+        <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
                 Preciso de um computador para utilizar o Delivroo em minha loja ?
@@ -29,7 +43,7 @@ const Faq = () => {
                 Não. Você só precisa de um smartphone com o sistema operacional Android para utilizar o aplicativo Gestor do Delivroo.
               </Text>
             </AccordionPanel>
-          </AccordionItem>
+         </AccordionItem>
 
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
@@ -58,21 +72,7 @@ const Faq = () => {
               </Text>
             </AccordionPanel>
           </AccordionItem>
-
-          <AccordionItem>
-            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
-              <Text fontWeight='600' fontSize="md" >
-                Vocês também fornecem o serviço de entrega com Motoboys ?
-              </Text>
-              <AccordionIcon fontSize="24px" />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                Não. Atualmente nós apenas conectamos o seu cliente a sua loja. A responsabilidade pela entrega do pedido é exclusiva do ponto de venda.
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
-          
+ 
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
@@ -104,6 +104,34 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
+                Como sei que chegou um novo pedido ?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                Sempre que um novo pedido chegar, você receberá uma notificação em seu telefone.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
+                Vocês também fornecem o serviço de entrega com Motoboys ?
+              </Text>
+              <AccordionIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text color="gray.600">
+                Não. Atualmente nós apenas conectamos o seu cliente a sua loja. A responsabilidade pela entrega do pedido é exclusiva do ponto de venda.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
+              <Text fontWeight='600' fontSize="md" >
                 O Delivroo serve apenas para delivery de comida ?
               </Text>
               <AccordionIcon fontSize="24px" />
@@ -115,35 +143,6 @@ const Faq = () => {
             </AccordionPanel>
           </AccordionItem>
 
-          <AccordionItem>
-            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
-              <Text fontWeight='600' fontSize="md" >
-                Preciso ter um site para usar o Delivroo ?
-              </Text>
-              <AccordionIcon fontSize="24px" />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                Não. Nós lhe forneceremos um link exclusivo para a sua loja online.
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
-
-          
-
-          <AccordionItem>
-            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
-              <Text fontWeight='600' fontSize="md" >
-                Como sei que chegou um novo pedido ?
-              </Text>
-              <AccordionIcon fontSize="24px" />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                Sempre que um novo pedido chegar, você receberá uma notificação em seu telefone.
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
 
         </Accordion>
         </VStack>

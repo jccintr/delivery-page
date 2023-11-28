@@ -5,9 +5,9 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 const links = [
   {id:1,title: 'CARACTERÍSTICAS',link:'#recursos'},
-  {id:2,title: 'FAQ',link:'#faq'},
-  {id:3,title: 'PLANOS',link:'#planos'},
   {id:4,title: 'EXEMPLOS',link:'#modelos'},
+  {id:3,title: 'PLANOS',link:'#planos'},
+  {id:2,title: 'FAQ',link:'#faq'},
   {id:5,title: 'ASSINAR',link:'#contato'}
 ];
 
@@ -35,7 +35,7 @@ const Header2 = () => {
 
   return (
     <>
-      <Box w={'100%'} bg='blue.600' px={[1,'300px']}>
+      <Box w={'100%'} bg='blue.500' px={[1,'300px']}>
         <Flex alignItems={'center'} justifyContent={'space-between'} >
 
           <HStack  spacing={8} alignItems={'center'}>
