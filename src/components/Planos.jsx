@@ -35,7 +35,7 @@ const Planos = () => {
     return (
         <Box py={6}>
           <VStack spacing={2} textAlign="center">
-            <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Conheça Nossos Planos</Heading>
+            <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Nossos Planos</Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
               Teste por 7 dias gratuitamente. Não solicitamos cartão de crédito. Cancele a qualquer momento.
             </Text>
