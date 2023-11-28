@@ -26,7 +26,7 @@ import {
 
 const Modelos = () => {
   return (
-    <Box bg='#F0EAFB' py={6}>
+    <Box id="modelos" bg='#F0EAFB' py={6}>
         <VStack spacing={2} textAlign="center">
             <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Lojas Modelo</Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>

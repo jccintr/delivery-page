@@ -11,7 +11,7 @@ import {IoFastFoodOutline,IoColorPaletteOutline} from 'react-icons/io5'
 
 const Card = ({ heading, description, icon, href }) => {
   return (
-    <Box maxW={{ base: 'full', md: '275px' }} w={'full'} align='center'  borderWidth="1px" borderRadius="lg" overflow="hidden" p={5} _hover={{ borderColor: 'blue.500' }}>
+    <Box  maxW={{ base: 'full', md: '275px' }} w={'full'} align='center'  borderWidth="1px" borderRadius="lg" overflow="hidden" p={5} _hover={{ borderColor: 'blue.500' }}>
       <Stack align={'center'} spacing={2}>
         <Flex  w={16} h={16} align={'center'} justify={'center'} color={'blue.500'} rounded={'full'} bg={useColorModeValue('gray.100', 'gray.700')}>
           {icon}
@@ -32,10 +32,10 @@ const Card = ({ heading, description, icon, href }) => {
 const Recursos = () => {
   
   return (
-    <Box p={4}>
+    <Box id="recursos" p={4}>
 
       <VStack spacing={2} textAlign="center">
-          <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Recursos do Delivroo</Heading>
+          <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Características do Delivroo</Heading>
           <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
           O Delivroo tem todos os recursos para você automatizar o seu delivery e melhor atender a seu cliente.
           </Text>

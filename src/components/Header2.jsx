@@ -3,21 +3,27 @@ import logo from '../assets/logo-delivroo-branco-tranparente.png';
 import {Box,Flex,HStack,Text,IconButton,useDisclosure,Stack,Image} from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
-const links = [{id:1,title: 'CARACTERÍSTICAS'},{id:2,title: 'FAQ'},{id:3,title: 'PLANOS'},{id:4,title: 'EXEMPLOS'},{id:5,title: 'ASSINAR'}];
+const links = [
+  {id:1,title: 'CARACTERÍSTICAS',link:'#recursos'},
+  {id:2,title: 'FAQ',link:'#faq'},
+  {id:3,title: 'PLANOS',link:'#planos'},
+  {id:4,title: 'EXEMPLOS',link:'#modelos'},
+  {id:5,title: 'ASSINAR',link:'#contato'}
+];
 
-const NavLink = ({children}) => {
+const NavLink = ({children,link}) => {
   
   return (
-    <Box display='flex' alignItems={'center'} justifyContent={'center'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={'#contato'}>
+    <Box display='flex' alignItems={'center'} justifyContent={'center'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={link}>
        <Text color={'#ffffff'} as='b' >{children}</Text>
     </Box>
   )
 }
 
-const NavLink2 = ({children}) => {
+const NavLink2 = ({children,link}) => {
   
   return (
-    <Box display='flex' alignItems={'center'} justifyContent={'flex-start'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={'#contato'}>
+    <Box display='flex' alignItems={'center'} justifyContent={'flex-start'} as="a" p={2} py={1}  _hover={{textDecoration: 'none', borderBottomWidth:1,borderTopWidth:1}} href={link}>
        <Text color={'#ffffff'} as='b' >{children}</Text>
     </Box>
   )
@@ -38,7 +44,7 @@ const Header2 = () => {
 
           <Flex alignItems={'center'} >
               <HStack  as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }} marginRight={50}>
-                  {links.map((link) => (<NavLink key={link.id}>{link.title}</NavLink>))}
+                  {links.map((link) => (<NavLink link={link.link} key={link.id}>{link.title}</NavLink>))}
               </HStack>
           </Flex>
 
@@ -57,7 +63,7 @@ const Header2 = () => {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {links.map((link) => (
-                <NavLink2 key={link.id}>{link.title}</NavLink2>
+                <NavLink2 link={link.link} key={link.id}>{link.title}</NavLink2>
               ))}
             
             </Stack>

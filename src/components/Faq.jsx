@@ -12,10 +12,10 @@ import {
 
 const Faq = () => {
   return (
-    <Box bg='#F0EAFB' py={6} >
+    <Box id="faq" bg='#F0EAFB' py={6} >
         <VStack spacing={2} textAlign="center">
         <Heading as="h1" mb='50px' fontSize={['2xl','2xl','3xl']}>Dúvidas Frequentes</Heading>
-        <Accordion  allowMultiple  maxW={{ base: '350px', lg: '900px' }} bg="white" rounded="lg">
+        <Accordion    maxW={{ base: '350px', lg: '900px' }} bg="white" rounded="lg">
 
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
@@ -40,7 +40,7 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Você pode criar e gerenciar o seu cardápio com o Aplicativo Gestor do Delivroo. Mas não se preocupe, nós lhe ajudamos a criar o seu cardápio inicial sem qualquer custo adicional.
+                Não se preocupe, nós criamos o seu cardáio inicial sem custo algum.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -54,7 +54,7 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Não. Nós não cobramos comissão ou taxas por pedidos. Você só paga a taxa mensal do seu plano para utilizar o Delivroo.
+                Não. Nós não cobramos comissões ou taxas por pedidos. Você só paga a mensalidade do seu plano para utilizar o Delivroo.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -68,7 +68,7 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Não. Atualmente o Delivroo apenas conecta o cliente ao estabelecimento comercial. A responsabilidade pela entrega do pedido é exclusiva do ponto de venda.
+                Não. Atualmente nós apenas conectamos o seu cliente a sua loja. A responsabilidade pela entrega do pedido é exclusiva do ponto de venda.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -90,7 +90,7 @@ const Faq = () => {
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                O meu cliente precisa se cadastrar no Delivroo para fazer pedidos ?
+                O meu cliente precisa se cadastrar para fazer pedidos ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
@@ -124,35 +124,23 @@ const Faq = () => {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                colocar a resposta aqui.
+                Não. Nós lhe forneceremos um link exclusivo para a sua loja online.
               </Text>
             </AccordionPanel>
           </AccordionItem>
 
+          
+
           <AccordionItem>
             <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
               <Text fontWeight='600' fontSize="md" >
-                Como é feito o pagamento dos pedidos ?
+                Como sei que chegou um novo pedido ?
               </Text>
               <AccordionIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                colocar a resposta aqui
-              </Text>
-            </AccordionPanel>
-          </AccordionItem>
-
-          <AccordionItem>
-            <AccordionButton  display="flex" alignItems="center" justifyContent="space-between" p={4} _hover={{ bg: 'gray.100' }}>
-              <Text fontWeight='600' fontSize="md" >
-                Como seu que chegou um novo pedido ?
-              </Text>
-              <AccordionIcon fontSize="24px" />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                colocar a resposta aqui.
+                Sempre que um novo pedido chegar, você receberá uma notificação em seu telefone.
               </Text>
             </AccordionPanel>
           </AccordionItem>
