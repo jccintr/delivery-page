@@ -16,13 +16,15 @@ function App() {
   return (
     <div className="App">
        <Header2/>
-       
-       <AppGestor/>
        <Funcionamento/>
+       <AppGestor/>
+       
        <Recursos/>
+       
+      
+       <Modelos/>
        <Faq/>
        <Planos/>
-       <Modelos/>
        <Form/>
        <Footer />
     </div>

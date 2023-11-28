@@ -84,7 +84,7 @@ const Form = () => {
             </Text>
           </VStack>
           <VStack spacing={2} textAlign="center">
-          <Box shadow="base" borderWidth="1px" borderColor={useColorModeValue('gray.200', 'gray.500')} borderRadius={'xl'}  mt='20px' w={{base:'340px', lg:'600px'}}  mx={10} p={{ base: 5, lg: 8 }}>
+          <Box shadow={[0,'base']} borderWidth={[0,'1px']} borderColor={useColorModeValue('gray.200', 'gray.500')} borderRadius={'xl'}  mt='20px' w={{base:'340px', lg:'600px'}}  mx={10} py={{ base: 5, lg: 8 }} px={{ base: 0, lg: 8 }}>
           <VStack spacing={5}>
           
                   <FormControl isRequired>
@@ -103,7 +103,7 @@ const Form = () => {
                       <InputLeftElement>
                         <FaWhatsapp />
                       </InputLeftElement>
-                      <Input type="text" name="telefone" placeholder="Seu telefone" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                      <Input type="text" name="telefone" placeholder="Seu WhatsApp com DDD" value={telefone} onChange={e => setTelefone(e.target.value)} />
                     </InputGroup>
                   </FormControl>
 

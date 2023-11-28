@@ -3,7 +3,7 @@ import logo from '../assets/logo-delivroo-branco-tranparente.png';
 import {Box,Flex,HStack,Text,IconButton,useDisclosure,Stack,Image} from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
-const links = [{id:1,title: 'Recursos'},{id:1,title: 'Dúvidas'},{id:1,title: 'Planos'},{id:1,title: 'Modelos'},{id:1,title: 'Contato'}];
+const links = [{id:1,title: 'CARACTERÍSTICAS'},{id:2,title: 'FAQ'},{id:3,title: 'PLANOS'},{id:4,title: 'EXEMPLOS'},{id:5,title: 'ASSINAR'}];
 
 const NavLink = ({children}) => {
   
@@ -33,7 +33,7 @@ const Header2 = () => {
         <Flex alignItems={'center'} justifyContent={'space-between'} >
 
           <HStack  spacing={8} alignItems={'center'}>
-               <Image h='100px' w='100px' src={logo} alt="Logo Delivroo" />
+               <Image my={1} h='100px' w='100px' src={logo} alt="Logo Delivroo" />
           </HStack>
 
           <Flex alignItems={'center'} >
