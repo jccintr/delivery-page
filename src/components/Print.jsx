@@ -13,14 +13,9 @@ const Print = () => {
       </Text>
     </VStack>
     <Stack direction={{ base: 'column', md: 'row' }}  textAlign="center" align="center" justify="center" spacing={{ base: 4, lg: 10 }} py={10}> 
-      
            <iframe width="350" height="250" src="https://www.youtube.com/embed/FOuE915uAdw?si=4H3HuCyzFJ0Nto6F" allowfullscreen></iframe>
-      
-       
            <Image borderWidth={'1px'} rounded={'lg'} borderColor={'gray.500'} w={'200px'}   src={cupom} alt="cupom" />
-       
-       
-    </Stack>
+      </Stack>
   </Box>
   )
 }

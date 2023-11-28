@@ -36,19 +36,19 @@ const Modelos = () => {
         <Stack direction={{ base: 'column', md: 'row' }}  textAlign="center" justify="center" spacing={{ base: 4, lg: 10 }} py={10}>
            <ModeloWrapper>
               <Image w='272px' h='500px'  src={modelo1} alt="versão pc" rounded='md' border={'1px'}/>
-              <Link href='https://delivroo.netlify.app/nocapricholanches'  textDecoration={'none'} isExternal>
+              <Link href='https://delivroo.netlify.app/nocapricholanches'  textDecoration={'none'} isExternal _hover={{textDecoration: 'none',bg:'blue.600'}}>
                     <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
               </Link>
            </ModeloWrapper>
            <ModeloWrapper>
                <Image w='272px' h='500px'  src={modelo2} alt="versão pc" rounded='md' border={'1px'}/>
-               <Link href='https://delivroo.netlify.app/lucigas' textDecoration={'none'} isExternal>
+               <Link href='https://delivroo.netlify.app/lucigas' textDecoration={'none'} isExternal _hover={{textDecoration: 'none',bg:'blue.600'}}>
                     <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
               </Link>
            </ModeloWrapper>
            <ModeloWrapper>
               <Image w='272px' h='500px'  src={modelo3} alt="versão pc" rounded='md' border={'1px'}/>
-              <Link href='https://delivroo.netlify.app/casadopastel' textDecoration={'none'} isExternal>
+              <Link href='https://delivroo.netlify.app/casadopastel' textDecoration={'none'} isExternal _hover={{textDecoration: 'none',bg:'blue.600'}}>
                     <Button w="full" mt='20px' colorScheme='blue' >Visitar esta loja</Button>
               </Link>
            </ModeloWrapper>

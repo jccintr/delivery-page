@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button,Heading,  Text,Image,Flex } from '@chakra-ui/react'
+import { Button,Heading,  Link,Image,Flex } from '@chakra-ui/react'
 import notebook from '../assets/delivroo-note-celular.png'
 
 
@@ -15,8 +15,10 @@ const Topo = () => {
 
             <Flex  w={['350px','600px']}   direction='column' align='center' justify='flex-start'>
               <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Tenha o seu próprio aplicativo de delivery, sem taxas ou comissões, a partir de R$59,90 mensais. Teste grátis por 15 dias.</Heading>
-               
-                <Button w={['full','200px']} mt={10} colorScheme='blue'>Quero Assinar</Button>
+              <Link href='#contato'  textDecoration={'none'}>
+                  <Button as='a' w={['full','200px']} mt={10} colorScheme='blue' _hover={{textDecoration: 'none',bg:'blue.600'}}>Quero Assinar</Button>
+              </Link>
+                
             </Flex>
 
 

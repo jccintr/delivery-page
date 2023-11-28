@@ -10,7 +10,7 @@ import {
     List,
     ListItem,
     ListIcon,
-    Button,
+    Button,Link,
   } from '@chakra-ui/react'
   import { FaCheckCircle } from 'react-icons/fa'
   
@@ -37,7 +37,7 @@ const Planos = () => {
           <VStack spacing={2} textAlign="center">
             <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Nossos Planos</Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
-              Teste por 7 dias gratuitamente. Não solicitamos cartão de crédito. Cancele a qualquer momento.
+              Teste por 15 dias gratuitamente. Sem fidelidade. Cancele a qualquer momento.
             </Text>
           </VStack>
           <Stack direction={{ base: 'column', md: 'row' }}  textAlign="center" justify="center" spacing={{ base: 4, lg: 10 }} py={10}> 
@@ -60,10 +60,10 @@ const Planos = () => {
               </Box>
               <VStack   py={4} borderBottomRadius={'xl'}>
               <Box w="80%" pb={7}>
-                  <Button w="full"  colorScheme='blue' >
-                    Quero este plano !
-                  </Button>
-                </Box>
+                  <Link href='#contato'  textDecoration={'none'}>
+                      <Button as='a' w="full"  colorScheme='blue' _hover={{textDecoration: 'none',bg:'blue.600'}}>Quero este plano</Button>
+                  </Link> 
+               </Box>
                 <Text fontWeight="900" mb='20px'>Detalhes do Plano Básico</Text>
                 <List spacing={3} textAlign="start" px={6}>
                   <ListItem>
@@ -116,10 +116,10 @@ const Planos = () => {
               </Box>
               <VStack   py={4} borderBottomRadius={'xl'}>
               <Box w="80%" pb={7}>
-                  <Button w="full"  colorScheme='blue' >
-                    Em Breve !
-                  </Button>
-                </Box>
+                 <Link href='#contato'  textDecoration={'none'}>
+                      <Button as='a' w="full"  colorScheme='blue' _hover={{textDecoration: 'none',bg:'blue.600'}}>Quero este plano</Button>
+                  </Link> 
+               </Box>
                 <Text fontWeight="900" mb='20px'>Detalhes do Plano Plus</Text>
                 <List spacing={3} textAlign="start" px={6}>
                   <ListItem>
