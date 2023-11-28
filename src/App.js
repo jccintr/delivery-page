@@ -11,6 +11,7 @@ import Modelos from './components/Modelos';
 import Form from './components/Form';
 import Header2 from './components/Header2';
 import Topo from './components/Topo';
+import Print from './components/Print';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
        <Recursos/>
        <Funcionamento/>
        <AppGestor/>
-       
+       <Print />
        
        
       
