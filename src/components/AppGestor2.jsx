@@ -14,10 +14,10 @@ const AppGestor2 = () => {
           
           <Heading as="h1" fontSize={['2xl','2xl','3xl']} >Aplicativo Gestor</Heading>
           <Text fontWeight='medium' fontSize={['lg','lg','xl']} pt='4' color={'gray.500'}>Gerencie o seu delivery com o nosso aplicativo gestor para Android.</Text> 
-          <Flex w='100%'  direction={{ base: 'column', lg: 'row' }} align='center' justify={{ base: 'center', lg: 'center' }}>
-              <Image w='300px'   src={img1} alt="Aplicativo Gestor" />
-              <Image w='300px'   src={img2} alt="Aplicativo Gestor" />
-              <Image w='300px'   src={img3} alt="Aplicativo Gestor" />
+          <Flex w='100%' mt={5} direction={{ base: 'column', lg: 'row' }} align='center' justify={{ base: 'center', lg: 'center' }}>
+              <Image w='200px' src={img1} alt="Aplicativo Gestor" m={5} />
+              <Image w='200px' src={img2} alt="Aplicativo Gestor" m={5}/>
+              <Image w='200px' src={img3} alt="Aplicativo Gestor" m={5}/>
           </Flex>
         </Box>
       )
