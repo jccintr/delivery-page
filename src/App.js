@@ -12,6 +12,7 @@ import Form from './components/Form';
 import Header2 from './components/Header2';
 import Topo from './components/Topo';
 import Print from './components/Print';
+import Meio from './components/Meio';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
        <Recursos/>
        <Funcionamento/>
        <AppGestor/>
+       <Meio />
        <Print />
        
        
