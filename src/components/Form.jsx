@@ -80,7 +80,7 @@ const Form = () => {
           <VStack spacing={2} textAlign="center">
             <Heading as="h1" fontSize={['2xl','2xl','3xl']}>Quero experimentar o  Delivroo !</Heading>
             <Text fontSize={['lg','lg','xl']} color={'gray.500'}>
-              Informe os seus dados no formulário abaixo para que possamos entrar em contato contigo.
+              Preencha o formulário abaixo para que possamos entrar em contato contigo.
             </Text>
           </VStack>
           <VStack spacing={2} textAlign="center">
