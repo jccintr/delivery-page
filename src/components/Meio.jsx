@@ -18,7 +18,7 @@ const Meio = () => {
                  Agilize o atendimento e obtenha maior satisfação de seus clientes utilizando nossos aplicativos de vendas web e gestor android.
             </Text>
               <Link href='#contato'  textDecoration={'none'}>
-                  <Button as='a' w={['full','200px']} mt={10} mb={10} colorScheme='green' _hover={{textDecoration: 'none',bg:'green.600'}}>Quero Assinar</Button>
+                  <Button as='a' w={['full','200px']} mt={10} mb={10} colorScheme='green' _hover={{textDecoration: 'none',bg:'green.600'}}>Quero Experimentar</Button>
               </Link>
                 
             </Flex>

@@ -19,7 +19,7 @@ const Topo = () => {
               Sem taxas ou comissões, a partir de <Text fontSize={['lg','lg','xl']} as='b'>R$59,90</Text> mensais. Teste grátis por 15 dias.
               </Text>
               <Link href='#contato'  textDecoration={'none'}>
-                  <Button as='a' w={['full','200px']} mt={10} colorScheme='blue' _hover={{textDecoration: 'none',bg:'blue.600'}}>Quero Assinar</Button>
+                  <Button as='a' w={['full','200px']} mt={10} colorScheme='blue' _hover={{textDecoration: 'none',bg:'blue.600'}}>Quero Experimentar</Button>
               </Link>
                 
             </Flex>

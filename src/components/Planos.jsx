@@ -96,7 +96,7 @@ const Planos = () => {
               </VStack>
              
             </PriceWrapper>
-
+{/*
             <PriceWrapper>
               <Box bg={useColorModeValue('gray.50', 'gray.700')} py={4} px={6}>
                 <Text fontWeight="500" fontSize="2xl">
@@ -137,7 +137,7 @@ const Planos = () => {
               </VStack>
              
             </PriceWrapper>
-             
+    */}      
     
             
           </Stack>
